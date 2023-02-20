@@ -1,0 +1,107 @@
+body {
+    background-color: azure;
+}
+
+h1 {
+    text-align: center;
+    font-size: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.container{
+    margin: 0 auto;
+    border-style: solid;
+    border-color: black;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    background-color: rgb(220,220,220);
+    border-radius: 15px;
+}
+
+.displayBox {
+    box-sizing: border-box;
+    height: 100px;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: end;
+    padding: 14px;
+    padding-bottom: 0px;
+}
+
+.display {
+    flex: 1 1 100%;
+    width: 300px;
+    border: solid rgb(0, 0, 0);
+    background-color: rgb(172, 235, 214);
+    text-align: right;
+    padding-right: 15px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+.leftBox {
+    height: 400px ;
+    box-sizing: border-box;
+    flex: 1 1 75%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 7px 0px 7px 7px;
+}
+
+.leftBox div {
+    flex: 0 0 33.33333%;
+    text-align: center;
+    display: flex;
+}
+
+.leftBox button {
+    margin: 7px;
+    flex: 1;
+}
+
+.leftBox .div0 {
+    flex: 2 0 66.6666%;
+}
+
+.rightBox {
+    box-sizing: border-box;
+    flex: 1 1 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 7px 7px 7px 0px;
+}
+
+.rightBox div {
+    flex: auto;
+    text-align: center;
+    display: flex;
+}
+
+.rightBox button {
+    margin: 7px;
+    flex: 1;
+}
+
+button {
+    font-size: 32px;
+    background-color: rgb(57, 57, 57);
+    color: rgb(220,220,220);
+    border-radius: 15px;
+    border: solid rgb(42, 42, 42);
+}
+
